@@ -1,0 +1,311 @@
+/* AFFECTS EVERYTHING
+*{
+    margin:0;
+    padding:0;
+} */
+
+/* The Main body of the webpage */
+body{
+    /* BACKGROUND IMAGE */
+    background-image: url("images/bg/bg_worms_lowres.png");
+    background-position: center;
+    /* background-size: cover;
+    background-size: contain; */
+    background-size: 150%;
+    
+    /* ALL TEXT inside the BODY */
+    font: normal 16px "Comic Sans MS", cursive;
+    color: cornsilk;
+
+    /* Custom cursor :o */
+    cursor: url('images/max_bounce.gif'), default;
+
+    /* OVERFLOW */
+    overflow-x: hidden;
+}
+
+/* The Header Banner thing */
+header{
+    /* BACKGROUND IMAGE */
+    background-image: url("images/maxxer\ face.jpg");
+    background-position-y: 1px;
+
+    /* PADDING - SIZE OF THE AREA */
+    padding: 0.5em;
+
+    /* TEXT & FONT STUFF */
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 200%;
+    font-weight: bold;
+
+    /* The spacing between lines */
+    line-height: 0em;
+
+    /* BORDER - OUTLINE TO THE AREA BOX */
+    border: 10px;
+    border-style: dotted;
+    border-top-color: yellow;
+    border-left-color: greenyellow;
+    border-bottom-color: paleturquoise;
+    border-right-color: orange;
+
+    /* CUSTOM CURSOR!! */
+    cursor: grab;
+    cursor: url('images/maxxer_cursor.png'), grab;
+}
+
+/* Only affected H1 elements inside the Header */
+header h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: crimson;
+    font-weight: 900;
+}
+
+/* All H1 Headers inside the main section */
+section h1{
+    font-size: 200%;
+    
+    /* cool things to format the text with */
+    text-decoration: underline aquamarine;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+
+    margin-left: 2%;
+}
+
+/* CUSTOM CLASS FOR COOL QUOTE BOXES */
+.box_1{
+    background-color: rgb(255, 0, 128);             /* background fill colour */
+    background-color: rgba(255, 0, 128, 0.9);       /* background fill colour with opacity*/
+    color: black;                                   /* text colour */
+
+    /* MARGIN - Distance from website edges */
+    margin-top: 2%;
+    margin-right: 50%;
+    margin-left: 10%;
+
+    /* BORDER */
+    border-left: 5px black solid;
+
+    /* PADDING */
+    padding-left: 1em;
+
+    /* CUSTOM CURSOR!! */
+    cursor: grab;
+    cursor: url('images/sam_bounce.gif'), grab;
+
+    /* MINIMUM WIDTH so that it doesn't become tiny */
+    min-width: 420px;
+}
+
+
+/* INLINE TEXT FORMATTING */
+.name{
+    color: cornsilk;
+    background-color: transparent;
+}
+mark.max{
+    color: cornsilk;
+    background-color: transparent;
+}
+mark.sam{
+    color: #02a4d3;
+    background-color: transparent;
+}
+
+/* LIST CLASS */
+.list{
+    /* MARGIN */
+    margin-left: 100px;
+    margin-right: 80%;
+    margin-bottom: 20px;
+    min-width: 200px;
+    
+
+    /* BORDER */
+    border:5px rgb(255, 0, 128) solid;
+    border-radius: 20px;
+
+    /* BACKGROUND IMAGE */
+    background-image: url("images/bg/bg_plain.png");
+    background-size: 300%;
+}
+/* CUSTOM PNG/SVG BULLET POINTS! for list items */
+.list ul {
+    list-style-type: devanagari;
+    list-style-image: url("images/max_bullet.svg");
+}
+
+/* CENTERS all items in this class */
+.center{
+    text-align: center;
+
+    margin: 10px auto 20px;
+    /* width: 50%; */
+    display: block;
+}
+
+.character-container {
+    display: flex;                                  /* makes this into a flexbox container */
+    flex-wrap: wrap;                                /* moves extra item onto next line */
+    justify-content: center;                        /* aligns items to the center */
+    align-items: center;                            /* prevents vertical stretching - and aligns them vertically centered*/
+    
+    
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    /* min-width: 1000px; */
+
+    /* DEBUG VISUALS */
+    /* background-color: #02a4d3;
+    border: 10px black solid;
+    box-sizing: border-box; */
+}
+
+/* FLOATING BOXES - each element is side by side, as opposed to being on a new line */
+.box_float{
+    float:left;                                         /* enables side-by-side floating objects aligned to the left */
+    width: 25%;
+    
+    margin-inline-start: 5%;
+    margin-block-end: 2%;
+    
+
+    /* takes the border into account when sizing width, not just the content*/
+    box-sizing: border-box;
+
+    /* box 1 stuff */
+    background-color: rgb(255, 0, 128);             /* background fill colour */
+    background-color: rgba(255, 0, 128, 0.9);       /* background fill colour with opacity*/
+    color: black;                                   /* text colour */
+    border: 10px black solid;                        /* outline border */
+    padding: 0em 1em;                                 /* left and right area padding */
+
+    /* turns the box into a CIRCLE */
+    border-radius: 100%;
+}
+.box_flex {
+    /* FLEX - grow, shrink, initial size */
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 25%; /*  No stretching: */
+    margin: 2%;
+    margin-top: 0;
+
+    min-width: 380px;
+    min-height: 280px;
+
+    /* takes the border into account when sizing width, not just the content*/
+    box-sizing: border-box;
+
+    /* box 1 stuff */
+    background-color: rgb(255, 0, 128);             /* background fill colour */
+    background-color: rgba(255, 0, 128, 0.9);       /* background fill colour with opacity*/
+    color: black;                                   /* text colour */
+    border: 10px black solid;                        /* outline border */
+    padding: 0em 1em;                                 /* left and right area padding */
+
+    /* turns the box into a CIRCLE */
+    border-radius: 100%;
+}
+
+/* CLEAR ALL FLOATS - must be used with div */
+.CLR{
+    clear: both;
+}
+
+/* PIXEL PERFECT SCALING */
+.pixel_art{
+    image-rendering: pixelated;                     /* pixel-perfect nearest neighbour scaling */
+    image-rendering: optimizeSpeed;                 /* same as above, but for firefox */
+    
+    width: 50%;
+    /* height: auto; */
+
+    
+}
+/* Hovering over a pixel art image */
+.pixel_art:hover{
+    background-color: #02a4d3;
+    background-color: transparent;
+    transform: scale(1.2);
+    /* width: 100%;
+    cursor: pointer; */
+}
+
+/* CUSTOM CURSORS */
+.cursor-sam {
+    cursor: pointer;
+    cursor: url('images/sam_bounce.gif'), pointer;
+}
+.cursor-max {
+    cursor: pointer;
+    cursor: url('images/max_head.gif'), pointer;
+}
+.cursor-sybil {
+    cursor: cell;
+    cursor: url('images/sybil_head.gif'), cell;
+}
+.cursor-bosco {
+    cursor: col-resize;
+    cursor: url('images/bosco_head.gif'), col-resize;
+}
+.cursor-maxxer {
+    cursor: copy;
+    cursor: url('images/maxxer_cursor.png'), copy;
+}
+.cursor-duke {
+    cursor: crosshair;
+    cursor: url('images/duke_head.png'), crosshair;
+}
+
+.cursor-clown {
+    cursor: url('images/clown_cursor.png'), crosshair;
+}
+
+/* FIXED POSITION - Elements always stays in the position on the monitor, regardless of parents or scrolling! */
+.fixed-pos {
+    position: fixed;
+    right: 0;
+    bottom: 0.5em;
+}
+/* STICKY POSITION - Starts as relative/normal, but becomes fixed when scrolling out of frame */
+.sticky-pos {
+    position: sticky;
+    top: 0;
+}
+/* IMAGE OVERLAY */
+.overlay {
+    position: fixed;
+    overflow: visible;
+    
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 2vmin;
+    min-width: 20px;
+}
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    /* background-image: url("images/max_bullet.svg"); */
+    background-image: url("images/worm_tiny.png");
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    background-repeat: space;
+    
+
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 0, 128);
+    background-image: url("images/bg/bg_plain.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
