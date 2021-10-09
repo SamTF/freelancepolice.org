@@ -1,0 +1,14 @@
+html,body{
+    margin:0;
+    height:100%;
+
+    /* CUSTOM CURSOR!! */
+    cursor: grab;
+    cursor: url('images/maxxer_cursor.png'), grab;
+}
+img{
+  /* FULL SCREEN image with no margin */
+  display:block;
+  width:100%; height:100%;
+  object-fit: cover;
+}
